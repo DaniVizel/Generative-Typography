@@ -11,7 +11,7 @@ function setup() {
 
 
 function draw() {
-  background(0, 0, 100, 1);
+  //background(0, 0, 100, 1);
 
 i = i+1;
 if (i >100){
@@ -22,7 +22,10 @@ h1 =95;
 h2 = 70;
 strokeWeight(2);
 
-  stroke(random(h1-5,h1+5), 40, 100);
+  stroke(i, 40, 100);
+  line(mouseX, mouseY, 1000, 1000);
+
+  /*stroke(random(h1-5,h1+5), 40, 100);
   line(mouseX, mouseY, 0, 0);
 
   stroke(random(h1-5,h1+5), 40, 100);
@@ -32,11 +35,11 @@ strokeWeight(2);
   line(mouseX, mouseY, 1000, 1000);
 
   stroke(random(h2-5, h2+5), 60, 100);
-  line(mouseX, mouseY, 0, 1000);
+  line(mouseX, mouseY, 0, 1000);*/
 
 //mask
 noStroke();
-fill('white');
+fill('black');
 rect(0, 0, 400, 1000);
 rect(600, 0, 400, 1000);
 rect(0,0,1000,100);
